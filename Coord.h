@@ -15,6 +15,7 @@ public:
 	void editHit();
 	void editMiss();
 	void set_ship(Ship &boat);
+	Ship& get_ship();
 
 
 private:
