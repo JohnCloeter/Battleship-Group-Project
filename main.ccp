@@ -23,9 +23,9 @@ int main()
 
 	//Set up player field and AI field
 	Field myField = new Field();
-  myField.setFieldPlayer(&myShips);
+  	myField.setShipsPlayer(&myShips);
 	Field aiField = new Field();
-  aiField.setFieldAI(&aiShips);
+  	aiField.setShipsAI(&aiShips);
 
 	//set up a score tracker and target checklist
 	int myScore = 0;
