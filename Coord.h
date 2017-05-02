@@ -18,7 +18,7 @@ public:
 	void editShip();
 	void editHit();
 	void editMiss();
-	void set_ship(&Ship boat);
+	void set_ship(Ship &boat);
 
 
 private:
