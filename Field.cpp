@@ -1,5 +1,7 @@
 #include "Coord.h" 
+#include "Ship.h"
 #include <iostream>
+#include <vector>
 #include "Field.h"
 
 Field::Field()
