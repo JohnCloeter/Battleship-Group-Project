@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "Ship.h"
 
 using namespace std;
 
