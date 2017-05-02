@@ -20,6 +20,8 @@ void Field::setShipsAI(Ship &ships[])
 		{
 			int r = rand()%10; //random int between 0-9
 			int c = rand()%10; //0-9
+			
+			
 
 			if (!myField[r][c].getShip())
 			{
@@ -133,12 +135,18 @@ void Field::setShipsPlayer(Ship &ships[])
 		bool Placing = true;
 		while (Placing)
 		{
-			int r = rand()%10;			//random int between 0-9
-			int c = rand()%10;			//0-9
-
+			cout<<("Enter a row to place your ship")<<endl;
+			cout<<("Row A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=10");
+			cin>>(r-1);	
+			cout<<("Enter a column to place your ship")<<endl;
+			cin>>(c-1);
+			cout<<("Enter the direction your ship will face")<<endl;
+			cout<<("North=1, East=2, South=3, West=4");
+			int orientation;
+			cin>>(orientation);
+			       
 			if (!myField[r][c].getShip)
 			{
-				int orientation = (rand() % 4) + 1; //rand int 1-4, 4 directions
 					if (orientation == 1) //North
 					{
 						if (r - ships[i].getLength() >= 0)
@@ -210,7 +218,7 @@ void Field::setShipsPlayer(Ship &ships[])
 							}
 						}
 
-						else
+						else //West
 						{
 							if (c - ships[i].getLength() >= 0) //West
 							{
