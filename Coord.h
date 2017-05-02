@@ -6,12 +6,7 @@ class Coord//The coordinate class for the main function to call.
 {
 	
 public:
-	Coord()
-	{
-		Ship = false;
-		Hit = false;
-		_ship = NULL;
-	}
+	Coord();
 	void getShip();
 	void getHit();
 	void getMiss();
