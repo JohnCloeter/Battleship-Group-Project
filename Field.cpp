@@ -9,7 +9,7 @@ Field::Field()
 		for (int j = 0; j < 10; j++)
 			myField[i][j] = Coord();					//Calls default constructor, makes everything water
 }
-void Field::setShipsAI(Ship[] ships)
+void Field::setShipsAI(Ship ships[])
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -19,7 +19,7 @@ void Field::setShipsAI(Ship[] ships)
 			int r = rand()%10; //random int between 0-9
 			int c = rand()%10; //0-9
 
-			if (!myField[r][c].getShip)
+			if (!myField[r][c].getShip())
 			{
 				int orientation = (rand() % 4) + 1;			//rand int 1-4, 4 directions
 					if (orientation == 1)			//North
@@ -124,7 +124,7 @@ void Field::setShipsAI(Ship[] ships)
 
 	}
 }
-void Field::setShipsPlayer(Ship[] ships)
+void Field::setShipsPlayer(Ship ships[])
 {
 	for (int i = 0; i < 5; i++)
 	{
