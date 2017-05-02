@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Coord.h"//Calling header file into ccp file.
 #include "Ship.h"//Calling header file into ccp file.
-#include "..\..\Project9\Project9\Coord.h"
 
 using namespace std;
 
