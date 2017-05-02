@@ -2,7 +2,6 @@
 #include <vector>
 #include "Ship.h"//Calling header file into ccp file.
 #include "Coord.h"//Calling header file into ccp file.
-#include "..\..\Project9\Project9\Ship.h"
 
 using namespace std;
 
