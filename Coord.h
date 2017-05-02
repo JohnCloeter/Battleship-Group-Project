@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Ship.h"
 
 using namespace std;
 
@@ -7,9 +8,9 @@ class Coord//The coordinate class for the main function to call.
 	
 public:
 	Coord();
-	void getShip();
-	void getHit();
-	void getMiss();
+	bool getShip();
+	bool getHit();
+	bool getMiss();
 	void editShip();
 	void editHit();
 	void editMiss();
@@ -19,7 +20,5 @@ public:
 private:
 	bool Ship, Hit, Miss, 
 	Ship * _ship;
-
-
-
+	
 };
