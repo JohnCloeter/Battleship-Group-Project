@@ -11,7 +11,7 @@ Field::Field()
 		for (int j = 0; j < 10; j++)
 			myField[i][j] = Coord();					//Calls default constructor, makes everything water
 }
-void Field::setShipsAI(Ship ships[])
+void Field::setShipsAI(Ship &ships[])
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -126,7 +126,7 @@ void Field::setShipsAI(Ship ships[])
 
 	}
 }
-void Field::setShipsPlayer(Ship ships[])
+void Field::setShipsPlayer(Ship &ships[])
 {
 	for (int i = 0; i < 5; i++)
 	{
