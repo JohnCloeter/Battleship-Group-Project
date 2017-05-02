@@ -10,7 +10,7 @@ Coord::Coord()
 	Ship = false;
 	Hit = false;
 	Miss = false;
-	*_ship = NULL;
+	_ship = NULL;
 }
 
 bool Coord::getShip()
@@ -42,13 +42,13 @@ void Coord::editMiss()
 	Miss = true;
 
 }
-void Coord::set_ship(Ship* boat)
+void Coord::set_ship(Ship &boat)
 {
-	*_ship = *boat;
+	_ship = &boat;
 
 }
 
-Ship * Coord::get_ship()
+Ship& Coord::get_ship()
 {
-	return *_ship;
+	return &_ship;
 }
