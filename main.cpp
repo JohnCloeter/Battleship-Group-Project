@@ -48,11 +48,15 @@ int main()
 		while (myTurn)
 		{
 			aiField.displayFieldAI();
-			cout << "Please select a target. \n";
-			string target;
-			getline (cin, target);
-			int r = //splice
-			int c = //splice
+			cout << "Please select a row to attack.. \n";
+			cout << "A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=0 \n";
+			int r;
+			getline (cin, r);
+			targetRow--;
+			cout << "Please select a column to attack.. \n";
+			int c;
+			getline(cin, c);
+		
 			if (r < 10 && r > 0 && c < 10 && c > 0)
 			{
 				myScore += aiField.hit(r,c);
