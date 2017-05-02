@@ -52,10 +52,11 @@ int main()
 			cout << "A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=0 \n";
 			int r;
 			getline (cin, r);
-			targetRow--;
+			r--;
 			cout << "Please select a column to attack.. \n";
 			int c;
 			getline(cin, c);
+			c--;
 		
 			if (r < 10 && r > 0 && c < 10 && c > 0)
 			{
