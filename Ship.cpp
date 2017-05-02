@@ -16,6 +16,16 @@ Ship::Ship(string name, int length)
 
 }
 
+int Ship::getLength()
+{
+	return _length;
+}
+
+string Ship::getName()
+{
+	return _name;
+}
+
 int Ship::hitShip()
 {
 	bool temp = true;
@@ -40,9 +50,5 @@ int Ship::hitShip()
 		return 0;
 }
 
-int Ship::getLength()
-{
-	return _length;
-}
 
 
