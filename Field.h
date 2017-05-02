@@ -12,8 +12,8 @@ class Field
 public:
 
 	Field();
-	void setShipsAI(Ship[] ships);
-	void setShipsPlayer(Ship[] ships);
+	void setShipsAI(Ship ships[]);
+	void setShipsPlayer(Ship ships[]);
 	void displayFieldPlayer();
 	void displayFieldAI();
 	int hit(int r, int c);
