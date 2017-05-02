@@ -135,6 +135,8 @@ void Field::setShipsPlayer(Ship &ships[])
 		bool Placing = true;
 		while (Placing)
 		{
+			int r,c,orientation;
+			
 			cout<<("Enter a row to place your ship")<<endl;
 			cout<<("Row A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=10");
 			cin>>(r-1);	
@@ -142,7 +144,6 @@ void Field::setShipsPlayer(Ship &ships[])
 			cin>>(c-1);
 			cout<<("Enter the direction your ship will face")<<endl;
 			cout<<("North=1, East=2, South=3, West=4");
-			int orientation;
 			cin>>(orientation);
 			       
 			if (!myField[r][c].getShip)
