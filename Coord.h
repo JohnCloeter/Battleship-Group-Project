@@ -18,7 +18,7 @@ public:
 	void editShip();
 	void editHit();
 	void editMiss();
-	void set_ship();
+	void set_ship(&Ship boat);
 
 
 private:
@@ -28,41 +28,3 @@ private:
 
 
 };
-
-void getisShip()
-{
-
-}
-
-void getisHit()
-{
-
-
-}
-
-void getisMiss()
-{
-
-
-}
-void editisShip(bool isShip)
-{
-	isShip = true;
-
-}
-
-void editMiss(bool isMiss)
-{
-	isMiss = true;
-}
-
-void editHit(bool isHit)
-{
-	isHit = true;
-
-}
-
-void set_ship(int _ship)
-{
-	Ship& _ship;
-}
